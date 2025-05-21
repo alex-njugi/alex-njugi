@@ -13,7 +13,7 @@ export default function Hero() {
             <br />{" "}
             <span className="highlight">
               <Typewriter
-                words={["A Software Engineer .", "A Full-Stack Developer .", "A Web Developer ."]}
+                words={["A Software Engineer.", "A Full-Stack Developer .", "A Web Developer ."]}
                 loop={true}
                 cursor
                 cursorStyle="|"

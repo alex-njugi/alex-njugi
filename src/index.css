@@ -705,6 +705,134 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+.cv-section {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cv-hero {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 60px 30px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.cv-hero h2 {
+  font-size: 2.5rem;
+  color: #F4C430;
+  margin-bottom: 15px;
+}
+
+.cv-intro {
+  font-size: 1.1rem;
+  color: #CCCCCC;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cv-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cv-button {
+  background: #F4C430;
+  color: #1A1A1A;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cv-button:hover {
+  background: #ffd700;
+}
+
+.cv-button.secondary {
+  background: transparent;
+  color: #F4C430;
+  border: 2px solid #F4C430;
+}
+
+.cv-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* CV Preview Section */
+.cv-preview {
+  background: rgba(0, 0, 0, 0.6); /* darker transparent background */
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+}
+
+
+.cv-preview h3 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #F4C430;
+  text-align: center;
+}
+
+.cv-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-timeline li {
+  margin-bottom: 25px;
+}
+
+.cv-timeline li strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.cv-timeline li p {
+  color: #CCCCCC;
+  font-size: 0.95rem;
+  margin: 4px 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .cv-hero h2 {
+    font-size: 2rem;
+  }
+
+  .cv-intro {
+    font-size: 1rem;
+  }
+
+  .cv-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .cv-preview h3 {
+    font-size: 1.5rem;
+  }
+
+  .cv-timeline li p {
+    font-size: 0.9rem;
+  }
+}
+
 
 /* Responsive Grid Adjustments */
 @media (max-width: 768px) {

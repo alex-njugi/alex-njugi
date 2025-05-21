@@ -2,16 +2,16 @@ import React, { useRef, useState, useEffect } from "react";
 import { FaPlay, FaPause } from "react-icons/fa";
 
 const playlist = [
-  "public/audio/track1.mp3",
-  "public/audio/track2.mp3",
-  "public/audio/track3.mp3",
-  "public/audio/track4.mp3",
-  "public/audio/track5.mp3",
-  "public/audio/track6.mp3",
-  "public/audio/track7.mp3",
-  "public/audio/track8.mp3",
-  "public/audio/track9.mp3",
-  "public/audio/track10.mp3"
+  "/audio/track1.mp3",
+  "/audio/track2.mp3",
+  "/audio/track3.mp3",
+  "/audio/track4.mp3",
+  "/audio/track5.mp3",
+  "/audio/track6.mp3",
+  "/audio/track7.mp3",
+  "/audio/track8.mp3",
+  "/audio/track9.mp3",
+  "/audio/track10.mp3"
 ];
 
 export default function MusicPlayer() {

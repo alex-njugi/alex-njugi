@@ -59,7 +59,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-logo">
        <a href="#hero" onClick={(e) => handleSectionClick(e, "hero")}>
-  <img src="public/images/logo.png" alt="Alex Logo" className="nav-logo-image" />
+  <img src="/images/logo.png" alt="Alex Logo" className="nav-logo-image" />
 </a>
 
       </div>
