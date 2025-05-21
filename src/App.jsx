@@ -1,0 +1,46 @@
+import React, { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Home from "./components/Home";
+import CV from "./components/CV";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import "./index.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+function ScrollToHash() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const target = document.querySelector(location.hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth" });
+        }, 100); // Small delay ensures section is rendered
+      }
+    }
+  }, [location]);
+
+  return null;
+}
+
+function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
+  return (
+    <>
+      <ScrollToHash />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cv" element={<CV />} />
+      </Routes>
+      <Footer />
+    </>
+  );
+}
+
+export default App;
