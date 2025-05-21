@@ -4,12 +4,13 @@ import Home from "./components/Home";
 import CV from "./components/CV";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import MusicPlayer from "./components/MusicPlayer"; // ✅ Music player
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Lottie from "lottie-react";
 import techBg from "./assets/tech-bg.json";
 
-// ✅ ScrollToHash function (moved inline)
+// ✅ Scroll to hash on route change
 function ScrollToHash() {
   const location = useLocation();
 
@@ -34,10 +35,13 @@ function App() {
 
   return (
     <div className="animated-bg-wrapper">
+      {/* Full-screen animated background */}
       <Lottie animationData={techBg} loop className="lottie-background" />
+
       <div className="page-content">
         <ScrollToHash />
         <Navbar />
+        <MusicPlayer /> {/* ✅ floating music controller */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cv" element={<CV />} />
