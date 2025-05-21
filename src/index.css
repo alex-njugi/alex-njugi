@@ -103,6 +103,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
+.nav-logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .nav-logo-image {
+    height: 32px;
+  }
+}
+
+
 .navbar {
   position: fixed;
   top: 0;

@@ -9,16 +9,17 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-text" data-aos="fade-right">
           <h1 className="hero-title">
-            Hi, I'm{" "}
+            Hi, I'm Alex .
+            <br />{" "}
             <span className="highlight">
               <Typewriter
-                words={["Alex Njugi Karanja .", "a Full-Stack Developer .", "a Software Engineer ."]}
+                words={["A Software Engineer .", "A Full-Stack Developer .", "A Web Developer ."]}
                 loop={true}
                 cursor
                 cursorStyle="|"
-                typeSpeed={80}
-                deleteSpeed={50}
-                delaySpeed={1500}
+                typeSpeed={100}
+                deleteSpeed={80}
+                delaySpeed={2000}
               />
             </span>
           </h1>

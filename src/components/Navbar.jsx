@@ -58,7 +58,10 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-logo">
-        <a href="#hero" onClick={(e) => handleSectionClick(e, "hero")}>Alex</a>
+       <a href="#hero" onClick={(e) => handleSectionClick(e, "hero")}>
+  <img src="public/images/logo.png" alt="Alex Logo" className="nav-logo-image" />
+</a>
+
       </div>
 
       <button className="hamburger" onClick={toggleMenu}>☰</button>
