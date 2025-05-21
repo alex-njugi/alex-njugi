@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function Contact() {
   const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false); // ✅ loading state added
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -11,6 +12,8 @@ export default function Contact() {
       email: form.email.value,
       message: form.message.value
     };
+
+    setLoading(true); // 🔄 show loading while request is in progress
 
     try {
       const res = await fetch("http://localhost:5000/api/contact", {
@@ -29,8 +32,10 @@ export default function Contact() {
         setStatus("❌ Error: " + err.error);
       }
     } catch (err) {
-      console.error(err); // ✅ this fixes the ESLint warning
+      console.error(err);
       setStatus("❌ Server error. Try again later.");
+    } finally {
+      setLoading(false); // ✅ done
     }
   };
 
@@ -38,13 +43,15 @@ export default function Contact() {
     <section id="contact" className="contact-section">
       <div className="contact-container">
         <h2>Get In Touch</h2>
-        <p>If you have a project, a question, or just want to say hello — I’d love to hear from you.</p>
+        <p>If you have a project, a question, or just want to say hello, I’d love to hear from you.</p>
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Sending..." : "Send Message"}
+          </button>
         </form>
 
         {status && <p className="contact-status">{status}</p>}

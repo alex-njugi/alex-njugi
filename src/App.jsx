@@ -4,10 +4,12 @@ import Home from "./components/Home";
 import CV from "./components/CV";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "./index.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Lottie from "lottie-react";
+import techBg from "./assets/tech-bg.json";
 
+// ✅ ScrollToHash function (moved inline)
 function ScrollToHash() {
   const location = useLocation();
 
@@ -17,7 +19,7 @@ function ScrollToHash() {
       if (target) {
         setTimeout(() => {
           target.scrollIntoView({ behavior: "smooth" });
-        }, 100); // Small delay ensures section is rendered
+        }, 100);
       }
     }
   }, [location]);
@@ -31,15 +33,18 @@ function App() {
   }, []);
 
   return (
-    <>
-      <ScrollToHash />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cv" element={<CV />} />
-      </Routes>
-      <Footer />
-    </>
+    <div className="animated-bg-wrapper">
+      <Lottie animationData={techBg} loop className="lottie-background" />
+      <div className="page-content">
+        <ScrollToHash />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cv" element={<CV />} />
+        </Routes>
+        <Footer />
+      </div>
+    </div>
   );
 }
 
