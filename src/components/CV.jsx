@@ -4,6 +4,7 @@ export default function CV() {
   return (
     <section className="cv-section">
       <h2>CV</h2>
+      <h1>STILL UNDER DEVELOPMENT</h1>
       <a href="/Alex_Karanja_CV.pdf" download className="cv-button">Download My CV</a>
     </section>
   );
