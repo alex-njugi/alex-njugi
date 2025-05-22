@@ -17,9 +17,11 @@ def contact():
     if not all([name, email, message]):
         return jsonify({"error": "All fields are required"}), 400
 
-    sender_email = "alexnjugi11@gmail.com"
-    sender_password = "dnuvowjunecdbxgu"
-    receiver_email = "alexnjugi11@gmail.com"
+    import os
+
+    sender_email = os.environ.get("EMAIL_USER")
+    sender_password = os.environ.get("EMAIL_PASS")
+    receiver_email = os.environ.get("RECEIVER_EMAIL", "alexnjugi11@gmail.com")
 
     msg = EmailMessage()
     msg.set_content(f"From: {name}\nEmail: {email}\n\n{message}")
