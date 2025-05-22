@@ -9,10 +9,10 @@ export default function CV() {
           Get to know my background, skills, and experience. You can download or view my CV using the buttons below.
         </p>
         <div className="cv-buttons">
-          <a href="/docs/Alex-Njugi-CV.pdf" download className="cv-button">
+          <a href="/docs/cv.pdf" download className="cv-button">
             📥 Download CV
           </a>
-          <a href="/docs/Alex-Njugi-CV.pdf" target="_blank" rel="noopener noreferrer" className="cv-button secondary">
+          <a href="/docs/cv.pdf" target="_blank" rel="noopener noreferrer" className="cv-button secondary">
             👁️ View CV
           </a>
         </div>
@@ -32,7 +32,7 @@ export default function CV() {
           </li>
           <li>
             <strong>Technologies</strong>
-            <p>React, JavaScript, HTML5, CSS3, Node.js, Python, Flask, Git, GitHub, VS Code</p>
+            <p>React,  JavaScript,  HTML,  CSS,  Node.js,  Python,  Flask,  Git,  GitHub,  VS Code</p>
           </li>
           <li>
             <strong>Certifications & Training</strong>
