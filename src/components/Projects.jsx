@@ -12,8 +12,8 @@ const projects = [
     title: "Power of Compassion Foundation.",
     description: "A community-focused platform built to support charitable initiatives and donations.",
     image: "/images/power.png",
-    github: "https://github.com/alex-njugi/the-power-of-compassion",
-    live: "https://github.com/alex-njugi"
+    github: "https://github.com/alex-njugi",
+    live: "https://the-power-of-compassion.vercel.app/"
   },
   {
     title: "Talex Suppliers LTD.",
