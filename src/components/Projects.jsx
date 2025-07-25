@@ -20,7 +20,7 @@ const projects = [
     description: "A modern business site for Talex Suppliers, focused on car accessories and product presentation.",
     image: "/images/talex.png",
     github: "https://github.com/alex-njugi",
-    live: "https://talex-suppliers-ltd.vercel.app/"
+    live: "https://talex-supplier.vercel.app/"
   },
   {
     title: "REJA BEATS Music Player.",
