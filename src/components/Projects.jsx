@@ -34,7 +34,7 @@ const projects = [
     description: "A modern e-commerce site for Electro Mart, focused on electronics sales, delivery, and product management.",
     image: "/images/electro.png",
     github: "https://github.com/alex-njugi",
-    live: "https://electronics-shop-frontend.onrender.com/"
+    live: "https://electro-mart-wine.vercel.app/"
   },
   {
     title: "Firelands Most Wanted.",
