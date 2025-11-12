@@ -23,7 +23,7 @@ export default function CV() {
         <ul className="cv-timeline">
           <li>
             <strong>Education</strong>
-            <p>BSc Applied Computer Technology, USIU-A (Ongoing)</p>
+            <p>BSc in AI and  Robotics, USIU-A (Ongoing)</p>
             <p>Moringa School — Full-Stack Software Development</p>
           </li>
           <li>
