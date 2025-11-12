@@ -4,7 +4,11 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 a Full-Stack Software Engineer and Developer.
 ---------------------------------------------
 
-I love building modern, responsive web applications that combine clean design with powerful backend logic. I specialize in React, JavaScript, Python, and Flask, and I’ve deployed full-stack projects that include animated UI, form handling, custom APIs, and mobile responsiveness. I'm also comfortable managing Git workflows and deploying on platforms like Vercel and Render. I was trained by Moringa School and AMI, and I’m currently pursuing a BSc. in Applied Computer Technology at USIU, where I’m deepening my skills in software engineering, cybersecurity, and distributed systems. Apart from coding, I’m a devoted Christian who lives by faith and purpose. I love learning, creating, and collaborating with others to bring meaningful ideas to life. Let’s build something amazing together.
+I love building intelligent, user-focused applications that combine clean design with powerful logic. I specialize in React, JavaScript, Python, and Flask, and I’ve deployed full-stack projects featuring interactive UIs, form handling, custom APIs, and mobile responsiveness. I’m comfortable managing Git workflows and deploying on platforms like Vercel and Render.
+
+I was trained by Moringa School and AMI, and I’m currently pursuing a BSc in Artificial Intelligence and Robotics at USIU-Africa, where I’m deepening my skills in machine learning, robotics engineering, computer vision, autonomous systems, and ethical AI governance.
+
+Beyond coding, I’m a devoted Christian, driven by faith and purpose. I thrive on learning, creating, and collaborating to develop impactful, forward-thinking solutions. Let’s build something amazing together.
 
 * 🌍  I'm based in Nairobi
 * 🖥️  See my portfolio at [MyPortfolio](http://alexnjugi.com)
