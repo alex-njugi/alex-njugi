@@ -10,20 +10,24 @@ import "aos/dist/aos.css";
 import Lottie from "lottie-react";
 import techBg from "./assets/tech-bg.json";
 
-// ✅ Scroll to hash on route change
-function ScrollToHash() {
-  const location = useLocation();
+// ✅ Scroll to top or hash on route change
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    if (location.hash) {
-      const target = document.querySelector(location.hash);
+    if (hash) {
+      // Scroll to anchor if hash exists
+      const target = document.querySelector(hash);
       if (target) {
         setTimeout(() => {
           target.scrollIntoView({ behavior: "smooth" });
         }, 100);
       }
+    } else {
+      // Scroll to top on route change
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }
-  }, [location]);
+  }, [pathname, hash]);
 
   return null;
 }
@@ -39,7 +43,7 @@ function App() {
       <Lottie animationData={techBg} loop className="lottie-background" />
 
       <div className="page-content">
-        <ScrollToHash />
+        <ScrollToTop /> {/* ✅ scrolls to top or hash on route change */}
         <Navbar />
         <MusicPlayer /> {/* ✅ floating music controller */}
         <Routes>
