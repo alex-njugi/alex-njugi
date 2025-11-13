@@ -202,6 +202,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hamburger {
+  font-size: 1.8rem;
+  transition: transform 0.2s ease;
+}
+
+.hamburger:active {
+  transform: scale(0.9);
+}
+
+  .hamburger {
     display: block;
   }
 

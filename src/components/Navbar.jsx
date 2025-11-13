@@ -64,7 +64,7 @@ export default function Navbar() {
 
       </div>
 
-      <button className="hamburger" onClick={toggleMenu}>☰</button>
+      <button className="hamburger" onClick={toggleMenu}>{menuOpen ? "✕" : "☰"}</button>
 
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         {navItems.map(item => (
