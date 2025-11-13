@@ -1,6 +1,9 @@
 import React from "react";
 
 export default function CV() {
+  // Optional: you can change this version number whenever you update the PDF
+  const cvVersion = "2"; 
+
   return (
     <section className="cv-section">
       <div className="cv-hero" data-aos="fade-up">
@@ -9,10 +12,19 @@ export default function CV() {
           Get to know my background, skills, and experience. You can download or view my CV using the buttons below.
         </p>
         <div className="cv-buttons">
-          <a href="/docs/cv.pdf" download className="cv-button">
+          <a
+            href={`/docs/cv.pdf?v=${cvVersion}`}
+            download
+            className="cv-button"
+          >
             📥 Download CV
           </a>
-          <a href="/docs/cv.pdf" target="_blank" rel="noopener noreferrer" className="cv-button secondary">
+          <a
+            href={`/docs/cv.pdf?v=${cvVersion}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cv-button secondary"
+          >
             👁️ View CV
           </a>
         </div>
@@ -23,7 +35,7 @@ export default function CV() {
         <ul className="cv-timeline">
           <li>
             <strong>Education</strong>
-            <p>BSc in AI and  Robotics, USIU-A (Ongoing)</p>
+            <p>BSc AI and Robotics, USIU-A (Ongoing)</p>
             <p>Moringa School — Full-Stack Software Development</p>
           </li>
           <li>
@@ -32,7 +44,7 @@ export default function CV() {
           </li>
           <li>
             <strong>Technologies</strong>
-            <p>React,  JavaScript,  HTML,  CSS,  Node.js,  Python,  Flask,  Git,  GitHub,  VS Code</p>
+            <p>React, JavaScript, HTML, CSS, Node.js, Python, Flask, Git, GitHub, VS Code</p>
           </li>
           <li>
             <strong>Certifications & Training</strong>
