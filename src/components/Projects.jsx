@@ -9,13 +9,6 @@ const projects = [
     live: "#"
   },
   {
-    title: "Power of Compassion Foundation.",
-    description: "A community-focused platform built to support charitable initiatives and donations.",
-    image: "/images/power.png",
-    github: "https://github.com/alex-njugi",
-    live: "https://the-power-of-compassion.vercel.app/"
-  },
-  {
     title: "Talex Suppliers LTD.",
     description: "A modern business site for Talex Suppliers, focused on car accessories and product presentation.",
     image: "/images/talex.png",
@@ -23,7 +16,21 @@ const projects = [
     live: "https://talex-app.vercel.app/"
   },
   {
-    title: "REJA BEATS Music Player.",
+    title: "Leakars Court.",
+    description: "An apartment-focused platform built to showcase residential units and property details.",
+    image: "/images/leakars.png",
+    github: "https://github.com/alex-njugi",
+    live: "https://leakarscourt.co.ke/"
+  },
+  {
+    title: "Lucy Muiruri.",
+    description: "An artist-focused platform built to showcase gospel music, videos, events, and bookings.",
+    image: "/images/lucy.png",
+    github: "https://github.com/alex-njugi",
+    live: "https://lucymuiruri.co.ke/"
+  },
+  {
+    title: "REJA Beats Music Player.",
     description: "A sleek and immersive music player platform, designed to showcase and stream music seamlessly.",
     image: "/images/reja.png",
     github: "https://github.com/alex-njugi",
@@ -35,13 +42,6 @@ const projects = [
     image: "/images/electro.png",
     github: "https://github.com/alex-njugi",
     live: "https://electro-mart-wine.vercel.app/"
-  },
-  {
-    title: "Firelands Most Wanted.",
-    description: "A modern web platform for Fireland's Most Wanted, focused on tracking fugitives and enabling public crime reporting.",
-    image: "/images/firelands.png",
-    github: "https://github.com/alex-njugi",
-    live: "https://end-of-phase1-project.vercel.app/"
   },
 ];
 
@@ -64,6 +64,9 @@ export default function Projects() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="more-link-container">
+          <a href="https://github.com/alex-njugi?tab=repositories" className="more-link">View More</a>
         </div>
       </div>
     </section>

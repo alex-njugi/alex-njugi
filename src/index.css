@@ -511,6 +511,31 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.more-link-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem; /* spacing from projects grid */
+}
+
+.more-link {
+  background: linear-gradient(-45deg, #1F1F2E, #2E3A59, #3a3d99, #2E8BC0, #00ADB5, #F4C430, #1F1F2E);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  color: #FFFFFF;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px; /* pill shape */
+  text-decoration: none;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.more-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
 
 .about-section {
   max-width: 1100px;        /* match Technologies width */
