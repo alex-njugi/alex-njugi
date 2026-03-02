@@ -1,23 +1,49 @@
 import React from "react";
-import { FaInstagram, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-links">
-        <a href="https://www.instagram.com/njugi_ak/" target="_blank" rel="noreferrer">
-          <FaInstagram />
+        <a 
+          href="https://wa.me/254792814605" 
+          target="_blank" 
+          rel="noreferrer"
+        >
+          <FaWhatsapp 
+            size={23}
+            style={{
+              stroke: "currentColor",
+              strokeWidth: 19
+            }}
+          />
         </a>
-        <a href="https://www.linkedin.com/in/alex-njugi-04521b367/" target="_blank" rel="noreferrer">
-          <FaLinkedin />
+
+        <a 
+          href="https://www.linkedin.com/in/alex-njugi-04521b367/" 
+          target="_blank" 
+          rel="noreferrer"
+        >
+          <FaLinkedin size={22} />
         </a>
-        <a href="https://github.com/alex-njugi" target="_blank" rel="noreferrer">
-          <FaGithub />
+
+        <a 
+          href="https://github.com/alex-njugi" 
+          target="_blank" 
+          rel="noreferrer"
+        >
+          <FaGithub size={22} />
         </a>
-        <a href="mailto:alexnjugi11@gmail.com" target="_blank" rel="noreferrer">
-          <FaEnvelope />
+
+        <a 
+          href="mailto:alexnjugi11@gmail.com" 
+          target="_blank" 
+          rel="noreferrer"
+        >
+          <FaEnvelope size={22} />
         </a>
       </div>
+
       <p className="footer-text">
         © {new Date().getFullYear()} Alex Njugi Karanja. All rights reserved.
       </p>
