@@ -1,3 +1,6 @@
+import React from "react";
+import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -7,7 +10,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaWhatsapp size={22} />
+          <FaWhatsapp />
         </a>
 
         <a 
@@ -15,7 +18,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaLinkedin size={22} />
+          <FaLinkedin />
         </a>
 
         <a 
@@ -23,7 +26,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaGithub size={22} />
+          <FaGithub />
         </a>
 
         <a 
@@ -31,7 +34,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaEnvelope size={22} />
+          <FaEnvelope />
         </a>
       </div>
 
