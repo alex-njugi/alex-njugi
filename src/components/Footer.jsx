@@ -1,10 +1,5 @@
 import React from "react";
-import { 
-  FaLinkedin, 
-  FaGithub, 
-  FaEnvelope, 
-  FaSquareWhatsapp 
-} from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -15,7 +10,13 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaSquareWhatsapp size={22} />
+          <FaWhatsapp 
+            size={24}
+            style={{ 
+              color: "#ff8c00",
+              filter: "drop-shadow(0 0 1px #ff8c00)"
+            }} 
+          />
         </a>
 
         <a 
@@ -23,7 +24,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaLinkedin size={22} />
+          <FaLinkedin />
         </a>
 
         <a 
@@ -31,7 +32,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaGithub size={22} />
+          <FaGithub />
         </a>
 
         <a 
@@ -39,7 +40,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaEnvelope size={22} />
+          <FaEnvelope />
         </a>
       </div>
 
