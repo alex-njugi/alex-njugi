@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaEnvelope, FaSquareWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaSquareWhatsapp />
+          <FaWhatsapp />
         </a>
 
         <a 
