@@ -10,7 +10,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaWhatsapp size="23"/>
+          <FaWhatsapp size={23}/>
         </a>
 
         <a 
