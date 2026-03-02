@@ -10,13 +10,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaWhatsapp 
-            size={24}
-            style={{
-              stroke: "currentColor",
-              strokeWidth: 20
-            }}
-          />
+          <FaWhatsapp />
         </a>
 
         <a 
@@ -24,7 +18,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaLinkedin size={22} />
+          <FaLinkedin />
         </a>
 
         <a 
@@ -32,7 +26,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaGithub size={22} />
+          <FaGithub />
         </a>
 
         <a 
@@ -40,7 +34,7 @@ export default function Footer() {
           target="_blank" 
           rel="noreferrer"
         >
-          <FaEnvelope size={22} />
+          <FaEnvelope />
         </a>
       </div>
 
@@ -50,3 +44,4 @@ export default function Footer() {
     </footer>
   );
 }
+
