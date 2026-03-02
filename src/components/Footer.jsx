@@ -11,7 +11,7 @@ export default function Footer() {
           rel="noreferrer"
         >
           <FaWhatsapp 
-            size={23}
+            size={22}
             style={{
               stroke: "currentColor",
               strokeWidth: 15
